@@ -1,3 +1,15 @@
+## Note from MakeKit
+
+This is an attempt to create an auto-correction of the Yaw-movement on the Air:bit drone.
+The compass heading is compared to a desired compass heading, then the difference is being multiplied with a proportional (PID) number and set to Yaw.
+
+* Challenge: The compass heading block uses the accelerometer in it´s equation. The accellerometer will give erradical numbers when motors are spinning. Therefore, these numbers needs to be smoothed with a low pass filter. 
+
+The low pass filter and the compassCorrectionFactor needs to be adjusted.
+
+## As time of writing (August 2020), the algorithm is not working
+
+
 
 > Open this page at [https://gomakekit.github.io/airbit-compass/](https://gomakekit.github.io/airbit-compass/)
 
